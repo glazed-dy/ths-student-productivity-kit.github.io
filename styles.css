@@ -284,3 +284,65 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
+.timer-section {
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.timer-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timer-display {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #2196F3;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.timer-controls input[type="number"] {
+    padding: 10px;
+    width: 80px;
+    border: 2px solid #2196F3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.timer-controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timer-controls button:hover {
+    background-color: #1976D2;
+}
+
+@media (max-width: 768px) {
+    .timer-container {
+        padding: 1rem;
+    }
+    
+    .timer-display {
+        font-size: 36px;
+    }
+}
