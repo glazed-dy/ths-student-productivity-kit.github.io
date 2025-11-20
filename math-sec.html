@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathematics Page</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    flex-direction: column;
+
+    padding: 20px 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+
+    /* ensure container takes content height */
+    align-self: center; /* horizontal centering within flex column */
+}
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #005fcc;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Example</h1>
+        <p>
+		<h3>GIVEN: DAY = 2 | HOURS = 3 | TOTAL SCORE = 54</h3>
+		<br><br>
+		<b>1st Step:</b> List down all of the given (day, hour/s, score) by writing them as "<span style="color: blue;"> x = n </span>" with n being the given data: x = 2 | x = 3 | x = 54 
+        </p>
+        <p>
+		<b>2nd Step:</b> Rewrite the factors by <span style="color: blue;">adding or subtracting (depending on the given sign</span>; so if it's <span style="color: red;">given is negative</span>, than you <span style="color: red;">add</span> but if it's <span style="color: red;">positive, subtract)</span> it's n to both sides 
+        </p>
+        <p>
+		<br>
+		<span style="color: blue;">(2-)</span> x = 2 <span style="color:blue">(-2)</span>  <span style="color: blue;">(3-)</span> x = 3 <span style="color: blue;">(3-)</span>  <span style="color: blue;">(54-)</span> x = 54 <span style="color: blue;">(54-)</span>
+		<br>
+		x - 2 = 0           x - 3 = 0           x - 54 = 0   
+        </p>
+		<p>
+			= <span style="color: green;">( x - 2)( x - 3 )</span>( x - 54 ) = 0 
+		</p>
+		<p>
+			<b>3rd Step:</b> Use the <span style="color: blue;">box method</span> and do it <span style="color: red;">*ONE AT A TIME*</span> by using the <span style="color: green;">first two</span> to multiple
+			<br>
+			<img src="other-files/math-1.png" height=auto; width=auto;>
+		</p>
+		<p>
+			<span style="color: blue;">Arrange</span> them from <span style="color: blue;">highest to lowest</span> and take the <span style="color: goldenrod;">similar factors and add</span>
+			<br>
+			: x² - <span style="color: goldenrod;">2x - 3x</span> + 6 = 0 
+			<br>
+			(x² - <span style="color: goldenrod;">5x</span> + 6)(x - 54)
+		</P>
+		<p>
+			<b>4th Step:</b> Repeat the third step except instead of a box, it’ll be more of a <span style="color: blue;">rectangle</span>
+			<br>
+			<img src="other-files/math-2.png" height=auto; width=auto;>
+			<br><br>
+			Once you got the answer and arranged it from highest to lowest, <span style="color: blue;">transpose</span> the value of zero to the other side by doing the <span style="color: blue;">P(x)</span> or “ P of x “ 
+			<br>
+			:  x³ <span style="color: blue;">- 59x²</span> + <span style="color: blue;">276x</span> - 324 = 0 
+			P(x) = x³ - 59x² + 276x - 324 
+		</p>
+		<p>
+			<b>5th Step:</b> Using any digital graphing tool (GeoGebra, etc.) to graph out the solved polynomial function . . . and then voila — you're done ! 
+			<br>
+			: P(x) = x³ - 59x² + 276x - 324 
+			<br>
+			P(x) = (x -2)(x-3)(x-54) :
+			<br>
+			<img src="other-files/math-3.png" height="300" width=auto;>
+		</p>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">Return to Main Page</button>
+    </div>
+</body>
+</html>

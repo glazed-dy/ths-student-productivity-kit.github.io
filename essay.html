@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essay Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s ease;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #005fcc;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Additional Information</h1>
+        <p>
+First (一) of all gadgets serve as a distraction, a distraction that keeps students away from their studies. It causes them to be less (少) focused on their responsibilities, 
+make them less interested in activities around school, and even forget their assignments and duties. And second (二)  of all, gadgets pose health problems,with excessive screen time radiation leading to eye (眼/目) 
+strain and poor posture, which will affect students. Finally, gadgets will not only cause physical health problems, but mental health problems as well. Students may feel discouraged and have low (下/低)  
+self esteem, and may vary on why they spend more time in utilizing gadgets instead of focusing on school. 
+        </p>
+        <p>
+Some may argue that gadgets are actually useful in learning development. Students can research and find resources that can help them in their learning. 
+Yes, gadgets can provide these advantages, but they also have disadvantages that serve as both a distraction and a problem to students. It is best if the students themselves handle their time wisely between their activities and gadgets. 
+They can start by first doing their responsibilities in their assignments before using their gadgets in their free time to prevent issues like cramming. Also, they should also know how to use their gadgets wisely,
+ whether they are to be used for entertainment or for educational purposes only. They should also make time away from their gadgets to rest their eyes and minds from screen time. 
+
+        </p>
+        <p>
+            To conclude, gadgets can pose a problem in learning productivity, but with the right use and handling, it will at least minimize the problem and help students handle their responsibilities in school more effectively. 
+        </p>
+
+        <button class="back-btn" onclick="window.location.href='index.html'">Return to Main Page</button>
+    </div>
+</body>
+</html>
